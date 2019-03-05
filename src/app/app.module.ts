@@ -1,14 +1,35 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { MatModule } from './modules/mat.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+
+
 import { AppComponent } from './app.component';
+import { ChartExampleOneComponent } from './chart-example-one/chart-example-one.component';
+import { ChartExampleTwoComponent } from './chart-example-two/chart-example-two.component';
+import { ChartThresholdComponent } from './chart-threshold/chart-threshold.component';
+import { PopulationGetterComponent } from './population-getter/population-getter.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ChartExampleOneComponent,
+    ChartExampleTwoComponent,
+    ChartThresholdComponent,
+    PopulationGetterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    FormsModule, 
+    ReactiveFormsModule,
+    HttpClientModule,
+
+
+    MatModule
   ],
   providers: [],
   bootstrap: [AppComponent]

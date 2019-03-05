@@ -1,0 +1,30 @@
+
+
+<div class="smalleft">
+
+  <mat-form-field class="example-full-width">
+    <input type="number" #year matInput placeholder="Full Year">
+  </mat-form-field>
+
+
+  <mat-form-field class="example-full-width">
+    <input type="number" #age matInput placeholder="Age">
+  </mat-form-field>
+
+
+  <button mat-raised-button color="primary" (click)="s.getPopulation(year.value, age.value)">Get Population</button>
+
+  <br><br>
+  <br><br>
+
+
+  <mat-form-field class="example-full-width">
+    <input type="number" #threshold matInput placeholder="Threshold in Millions">
+  </mat-form-field>
+
+
+  <button mat-raised-button color="primary" (click)="s.updateThresholdSubject.next(threshold.value*1000*1000)">Set Threshold</button>
+
+
+
+</div>
