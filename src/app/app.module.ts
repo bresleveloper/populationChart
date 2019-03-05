@@ -46,7 +46,7 @@ git remote add origin https://github.com/bresleveloper/populationChart.git
 git push -u origin master
 
 
-ng build --prod --output-path docs --base-href populationChart
+ng build --prod --output-path docs --base-href /populationChart/
 
 https://bresleveloper.github.io/populationChart
 https://bresleveloper.github.io/populationChart/docs

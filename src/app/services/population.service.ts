@@ -27,7 +27,7 @@ export class PopulationService {
   getPopulation(fullyear:number, age:number) :void {
     //sort prop should be by mapping somewhere
     console.log(`PopulationService getPopulation ${fullyear}/${age}`)
-    this.http.get(`http://api.population.io/1.0/population/${fullyear}/aged/${age}/`)
+    this.http.get(`https://api.population.io/1.0/population/${fullyear}/aged/${age}/`)
         .pipe(tap(console.log))
         .subscribe(data => this.populationSubject.next(data))
   }
